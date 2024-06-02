@@ -21,5 +21,6 @@ steps:
         '--platform',
         'managed',
         '--allow-unauthenticated',
-      ]
+      ] 
+      timeout: '3000s'
  
