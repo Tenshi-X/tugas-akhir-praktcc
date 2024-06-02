@@ -13,10 +13,11 @@ const dataBuku = db.define(
     harga: Sequelize.INTEGER,
     stok: Sequelize.INTEGER,
     penerbit: Sequelize.STRING,
+    tahun: Sequelize.STRING,
   },
   {
     freezeTableName: true,
-    timestamps: false
+    timestamps: false,
   }
 );
 
