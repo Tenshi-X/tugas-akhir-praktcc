@@ -16,6 +16,7 @@ const dataBuku = db.define(
   },
   {
     freezeTableName: true,
+    timestamps: false
   }
 );
 
