@@ -16,6 +16,14 @@ import {
   deleteDataBuku,
   getDataBukuById,
 } from "../controller/dataBukuController.js";
+
+import {
+  getDataPenerbit,
+  updateDataPenerbit,
+  createDataPenerbit,
+  deleteDataPenerbit,
+  getDataPenerbitById,
+} from "../controller/dataPenerbitController.js";
 import { verifyToken } from "../middleware/VerifyToken.js";
 import { refreshToken } from "../controller/refreshToken.js";
 
@@ -40,5 +48,11 @@ router.post("/buku/create", createDataBuku);
 router.get("/buku/detail/:id_buku", getDataBukuById);
 router.put("/buku/update/:id_buku", updateDataBuku);
 router.delete("/buku/delete/:id_buku", deleteDataBuku);
+
+router.get("/penerbit", getDataPenerbit);
+router.post("/penerbit/create", createDataPenerbit);
+router.get("/penerbit/detail/:id_penerbit", getDataPenerbitById);
+router.put("/penerbit/update/:id_penerbit", updateDataPenerbit);
+router.delete("/penerbit/delete/:id_penerbit", deleteDataPenerbit);
 
 export default router;

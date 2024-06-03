@@ -1,5 +1,4 @@
 import dataBuku from "../models/dataBukuModel.js";
-import User from "../models/userModel.js";
 
 //Get all from buku
 export const getDataBuku = async (req, res) => {
